@@ -20,9 +20,9 @@ class Config:
     """Sets configuration vars."""
     # Lab user environment resource settings
     GCP_REGION=os.getenv("GCP_REGION", "us-central1")
-    PROJECT_ID=os.getenv("PROJECT_ID", "dougkelly-sandbox")
+    PROJECT_ID=os.getenv("PROJECT_ID", "qwiklabs-gcp-01-2bc0e723a4fe")
     ARTIFACT_STORE_URI=os.getenv("ARTIFACT_STORE_URI", "gs://mlops-workshop-artifact-store")
-    CUSTOM_SERVICE_ACCOUNT=os.getenv("CUSTOM_SERVICE_ACCOUNT", "tfx-tuner-caip-service-account@dougkelly-sandbox.iam.gserviceaccount.com")    
+    CUSTOM_SERVICE_ACCOUNT=os.getenv("CUSTOM_SERVICE_ACCOUNT", "tfx-tuner-caip-service-account@qwiklabs-gcp-01-2bc0e723a4fe.iam.gserviceaccount.com")    
     # Lab user runtime environment settings
     PIPELINE_NAME=os.getenv("PIPELINE_NAME", "covertype_continuous_training")
     MODEL_NAME=os.getenv("MODEL_NAME", "covertype_classifier")
